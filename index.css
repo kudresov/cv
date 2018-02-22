@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+}
+
+aside {
+  padding: 2rem;
+  flex: 1;
+  color: white;
+  background: rgb(76, 76, 76);
+  max-width: 20rem;
+}
+
+address {
+  margin: 1rem 0 2rem 0;
+}
+
+li {
+  margin: 0.5rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  line-height: 1.3rem;
+}
+
+h3 {
+    margin: 2rem 0 0 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main {
+  box-shadow: -2px 0px 4px 2px rgba(0, 0, 0, 0.38);
+  flex: 1;
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.tel {
+  font-style: normal;
+  margin: 0.25rem 0;
+}
+
+.email {
+  font-style: normal;
+  color: rgb(19, 105, 106);
+}
+
+.section {
+  color: white;
+  padding: 1rem 1rem 1rem 3rem;
+  display: inline-block;
+  background-color: rgb(35, 149, 150);
+}
+
+.date {
+  color: rgb(128, 128, 128);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+}
+
+.section-container {
+  position: relative;
+  left: -4rem;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.triangle {
+  fill: #14686a;
+}
+
+.hero-title {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.hero-title::after {
+  content: ' }';
+  color: rgb(35, 149, 150);
+}
+
+.hero-title::before {
+  content: '{ ';
+  color: rgb(35, 149, 150);
+}
