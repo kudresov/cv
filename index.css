@@ -1,5 +1,5 @@
 body {
-  display:  flex;
+  display: flex;
   justify-content: center;
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -99,4 +99,30 @@ article {
   color: rgb(35, 149, 150);
 }
 
-.cv {border: 1px solid rgba(101, 101, 101, 0.38);box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);justify-content: center;display: flex;max-width: 60rem;}
+.cv {
+  border: 1px solid rgba(101, 101, 101, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  justify-content: center;
+  display: flex;
+  max-width: 60rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  aside {
+    max-width: none;
+  }
+  
+  .cv {
+    display: block;
+    box-shadow: none;
+    border: none;
+  }
+
+  .main {
+    box-shadow: none;
+  }
+}
