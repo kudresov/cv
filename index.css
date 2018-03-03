@@ -19,7 +19,7 @@ address {
 }
 
 li {
-  margin: 0.5rem;
+  margin: 0.75rem;
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 h3 {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1.5rem 0;
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -49,6 +49,24 @@ article {
 
 #name {
   color: rgb(35, 149, 150);
+}
+
+#trophy {
+  height: 1rem;
+}
+
+aside > section > ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside > section > ul > li {
+  list-style: none;
+  margin: 0.75rem 0;
+}
+
+aside > section {
+  margin: 3rem 0;
 }
 
 .main {
@@ -119,6 +137,10 @@ article {
   justify-content: center;
   display: flex;
   max-width: 60rem;
+}
+
+.achievements > p {
+  margin: 1.25rem 0;
 }
 
 @page {
