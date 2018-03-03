@@ -3,6 +3,7 @@ body {
   justify-content: center;
   margin: 0;
   font-family: Helvetica, sans-serif;
+  -webkit-print-color-adjust: exact;
 }
 
 aside {
@@ -33,6 +34,7 @@ h3 {
 }
 
 article {
+  page-break-inside: avoid;
   margin-bottom: 5rem;
 }
 
@@ -82,6 +84,7 @@ article {
 }
 
 .hero-title {
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: normal;
 }
@@ -104,22 +107,47 @@ article {
   max-width: 60rem;
 }
 
-@media (max-width: 768px) {
-  body {
-    display: block;
+@page {
+  margin: 0;
+  size: auto;
+}
+
+@media print {
+  .cv {
+    border: none;
+    box-shadow: none;
+    max-width: none;
+  }
+
+  .main {
+    box-shadow: none;
+    max-width: none;
+    flex: 2;
   }
 
   aside {
     max-width: none;
   }
+}
 
-  .cv {
-    display: block;
-    box-shadow: none;
-    border: none;
-  }
+@media not print {
+  @media (max-width: 768px) {
+    body {
+      display: block;
+    }
 
-  .main {
-    box-shadow: none;
+    aside {
+      max-width: none;
+    }
+
+    .cv {
+      display: block;
+      box-shadow: none;
+      border: none;
+    }
+
+    .main {
+      box-shadow: none;
+    }
   }
 }
