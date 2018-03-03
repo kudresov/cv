@@ -38,6 +38,10 @@ article {
   margin-bottom: 5rem;
 }
 
+#achievements {
+  page-break-inside: avoid;
+}
+
 .main {
   box-shadow: -2px 0px 4px 2px rgba(0, 0, 0, 0.38);
   flex: 1;
@@ -55,7 +59,7 @@ article {
   color: rgb(19, 105, 106);
 }
 
-.section {
+.section-title {
   color: white;
   padding: 1rem 1.5rem 1rem 3rem;
   display: inline-block;
@@ -70,7 +74,7 @@ article {
   font-weight: bold;
 }
 
-.section-container {
+.section-title-container {
   position: relative;
   left: -4rem;
   display: flex;
