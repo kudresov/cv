@@ -38,8 +38,17 @@ article {
   margin-bottom: 5rem;
 }
 
+.section-icon {
+  height: 1.3rem;
+  margin-left: 0.75rem;
+}
+
 #achievements {
   page-break-inside: avoid;
+}
+
+#name {
+  color: rgb(35, 149, 150);
 }
 
 .main {
@@ -60,9 +69,10 @@ article {
 }
 
 .section-title {
+  display: flex;
+  align-items: center;
   color: white;
   padding: 1rem 1.5rem 1rem 3rem;
-  display: inline-block;
   background-color: rgb(35, 149, 150);
 }
 
