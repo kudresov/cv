@@ -166,6 +166,21 @@ aside > section {
   margin-right: 0.75rem;
 }
 
+#original-cv-container {
+  visibility: collapse;
+  text-align: right;
+  color: rgb(128, 128, 128);
+  padding-top: 3rem;
+}
+
+a {
+  color: #009897;
+}
+
+a:hover {
+  color: #008685;
+}
+
 @page {
   margin: 0;
   size: auto;
@@ -190,6 +205,14 @@ aside > section {
 
   aside {
     max-width: none;
+  }
+
+  article {
+    padding-top: 1rem;
+  }
+
+  #original-cv-container {
+    visibility: visible;
   }
 }
 
