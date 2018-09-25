@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='vitalij-kudresov-cv.pdf' file:///Users/vitalijkudresov/repo/cv/index.html && git add vitalij-kudresov-cv.pdf && git commit --amend --no-edit"
+      "pre-push": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='vitalij-kudresov-cv.pdf' file:///Users/vitalijkudresov/repo/cv/index.html && git add vitalij-kudresov-cv.pdf"
     }
   }
 }
