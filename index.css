@@ -110,6 +110,7 @@ aside > section {
   align-items: left;
   flex-direction: column;
   margin-top: 3rem;
+  width: 16rem;
 }
 
 .triangle {
