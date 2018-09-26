@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-pdf": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='vitalij-kudresov-cv.pdf' file:///Users/vitalijkudresov/repo/cv/index.html && git add vitalij-kudresov-cv.pdf"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --print-to-pdf='vitalij-kudresov-cv.pdf' file:///Users/vitalijkudresov/repo/cv/index.html && git add vitalij-kudresov-cv.pdf"
+      "pre-commit": "npm run generate-pdf"
     }
   }
 }
