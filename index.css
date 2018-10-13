@@ -1,3 +1,7 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -21,8 +25,22 @@ address {
   margin: 1rem 0 2rem 0;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 li {
-  margin: 0.75rem;
+  margin: 0.75rem 0.75rem 0.75rem 0;
+  list-style-type: none;
+  text-indent: -8px;
+}
+
+li:before {
+  color: #9baead;
+  content: '–';
+  text-indent: -8px;
+  position: relative;
+  left: -0.5rem;
 }
 
 p {
@@ -37,6 +55,7 @@ h3 {
 }
 
 article {
+  color: #3d4040;
   page-break-inside: avoid;
   margin-bottom: 5rem;
   margin-top: 1rem;
@@ -60,8 +79,7 @@ article {
 }
 
 aside > section > ul {
-  margin: 0;
-  padding: 0;
+  padding-left: 1rem;
 }
 
 aside > section > ul > li {
