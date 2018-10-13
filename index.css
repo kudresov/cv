@@ -1,9 +1,10 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 2rem;
   font-family: Helvetica, sans-serif;
   -webkit-print-color-adjust: exact;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 aside {
@@ -12,6 +13,8 @@ aside {
   color: white;
   background: rgb(76, 76, 76);
   max-width: 20rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 1rem 0 0 1rem;
 }
 
 address {
@@ -71,10 +74,12 @@ aside > section {
 }
 
 .main {
-  box-shadow: -2px 0px 4px 2px rgba(0, 0, 0, 0.38);
+  border-radius: 0 1rem 1rem 0;
+  background: white;
   flex: 1;
   padding: 2rem 2rem 2rem 3rem;
   max-width: 40rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .tel {
@@ -132,8 +137,6 @@ aside > section {
 }
 
 .cv {
-  border: 1px solid rgba(101, 101, 101, 0.38);
-  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
   justify-content: center;
   display: flex;
   max-width: 60rem;
@@ -144,7 +147,6 @@ aside > section {
 }
 
 #download-btn {
-  /* display: -webkit-flex; */
   display: flex;
   align-items: center;
   background-color: rgb(35, 149, 150);
@@ -192,8 +194,11 @@ a:hover {
 }
 
 @media print {
+  body {
+    margin: 0;
+  }
+
   .cv {
-    border: none;
     box-shadow: none;
     max-width: none;
   }
@@ -210,6 +215,8 @@ a:hover {
 
   aside {
     max-width: none;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   article {
@@ -224,11 +231,13 @@ a:hover {
 @media not print {
   @media (max-width: 768px) {
     body {
+      margin: 0;
       display: block;
     }
 
     aside {
       max-width: none;
+      border-radius: 0;
     }
 
     .cv {
