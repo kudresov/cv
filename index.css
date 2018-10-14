@@ -266,6 +266,8 @@ a:hover {
 
     .main {
       box-shadow: none;
+      border-radius: 0;
+      max-width: initial;
     }
   }
 }
